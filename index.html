@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload='load();'>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+<div class='header'>
+<div id='logo' style="text-align:center;">الكلية التطبيقية في حماه</div>
+</div><br/>
+<div id='btnk'>
+<button id='btn3'  style="" onclick="func1();" class="buttonn">فصل اول</button>&nbsp;&nbsp;&nbsp;
+ <button id='btn4' style="opacity:0.3;" /*onclick="func2();"*/ class="buttonn">فصل تاني</button>
+ </div><br/>
+<div id='all'><br/>
+<div id='btn'>
+<button id='btn1' onclick="myFunction();" class="button button3">نظري</button>&nbsp;&nbsp;&nbsp;
+ <button id='btn2' style="opacity:0.3;" onclick="myFunction2();" class="button button3">عملي</button>
+ </div>
+ <br/>
+<div id="myDIV">
+<table><caption>ادارة شبكات 2</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table><br/>
+<table><caption>هندسة برمجيات متقدمة</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>امن معلومات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>معالجات ومتحكمات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>بيانات الحاسوب</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+</div>
+<div id="myDIV1" style='display:none;'>
+<table><caption>ادارة شبكات 2</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table><br/>
+<table><caption>هندسة برمجيات متقدمة</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>امن معلومات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>معالجات ومتحكمات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>بيانات الحاسوب</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+</div>
+</div>
+<div id='all2'><br/>
+<div id='btn'>
+<button id='btn5' onclick="div1();" class="button button3">نظري</button>&nbsp;&nbsp;&nbsp;
+ <button id='btn6' style="opacity:0.3;" onclick="div2();" class="button button3">عملي</button>
+ </div>
+ <br/>
+<div id="div3">
+<table><caption>ادارة مشاريع ونظم المعلومات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>تحليل البيانات ونظم دعم القرار</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>امن شبكات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>مبادئ الاتومات والمترجمات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>برمجيات نقالة</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+</div>
+
+<div id="div4">
+<table><caption>ادارة مشاريع ونظم المعلومات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>تحليل البيانات ونظم دعم القرار</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>امن شبكات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>مبادئ الاتومات والمترجمات</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+<br/>
+<table><caption>برمجيات نقالة</caption>
+<tr>
+<th>###</th><th>اسم المحاضرة</th><th>تاريخها</th><th>رابط التحميل</th>
+</tr>
+<tr>
+<td>1</td><td>-----</td><td>-----</td><td>‎<a href="#" target="_blanck">اضغط هنا</a></td>
+</tr>
+</table>
+</div>
+</div>
+<div class='footer'>@برمجة وتطوير : <a href='https://www.facebook.com/kldo2010r' target='_blanck'>خلدون ياسين دالي</a></div>
+</body>
+</html>
